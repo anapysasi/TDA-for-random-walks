@@ -9,6 +9,7 @@
 
 Clone the github repo either using git clone <https://github.com/anapysasi/TDA-for-random-walks.git> or just download from Github using the green button.
 
+![f5]
 
 ### Random walks calculations
 
@@ -20,7 +21,7 @@ This program alouds you to create different types of random walks, varying the p
 [f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
 [f3]: http://chart.apis.google.com/chart?cht=tx&chl=Z_n
 [f4]: http://chart.apis.google.com/chart?cht=tx&chl=Z_0=0 
-[f4]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}}
+[f5]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}}
 
 On the other hand, it is interesting how the random walks approximate to another type of random function, the __Wiener process__. 
 
