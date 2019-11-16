@@ -1,11 +1,5 @@
----
-title: "Documentation: random walks"
-author: "Ana Pilar Ysasi Cillero"
-date: "11/2/2019"
-output:
-  html_notebook: default
-  pdf_document: default
----
+# Documentation: random walks
+## Author: "Ana Pilar Ysasi Cillero"
 
 
 # Topological Data Analysis of Random functions (Random walks)
