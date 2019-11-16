@@ -78,6 +78,13 @@ Is a function which pretends to collaps all the previous funtions by giving you 
 3. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
 4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
+For example, the previous random walks will be computted as:
+```R
+rand_walk <- configuration(T = 100, random_type = "Bernoulli", return2zero = FALSE, p = 0.5) 
+Wiener <- configuration(T = 100, random_type = "Normal_dist", return2zero = FALSE) 
+rw_zero <- configuration(T = 100, random_type = "Normal_dist", return2zero = TRUE) 
+```
+
 [f1]: http://chart.apis.google.com/chart?cht=tx&chl=\\{S_{n}\\}
 [f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
 [f3]: http://chart.apis.google.com/chart?cht=tx&chl=Z_n
