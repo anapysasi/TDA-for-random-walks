@@ -77,6 +77,17 @@ pd3 <- per_1[[1]]
 Lets see what is the output of this function:
 ```R
 pd1[1:10,]
+     [,1] [,2] [,3]
+ [1,]    1  -40  -39
+ [2,]    1  -38  -37
+ [3,]    1  -38  -37
+ [4,]    1  -38  -37
+ [5,]    1  -38  -37
+ [6,]    1  -39  -37
+ [7,]    1  -37  -36
+ [8,]    1  -37  -36
+ [9,]    1  -37  -36
+[10,]    1  -37  -36
 ```
 
 The first columns is going to correspond to the index of the random walk (they are going to go from ```1``` to ```num_rep```). The other two columns correspond to the persistence diagram of that random walk. (The intervals are repited a couple of times, which makes perfect sense with how are the graphs of this functions and how you compute the persistence homology of the sublevel sets). 
@@ -84,6 +95,18 @@ The first columns is going to correspond to the index of the random walk (they a
 If you look at the output in later rows you will get:
 ```R
 pd1[1005:1015,]
+      [,1] [,2] [,3]
+ [1,]    4   19   21
+ [2,]    4   22   23
+ [3,]    4   22   23
+ [4,]    4  -19   24
+ [5,]    5  -46  -45
+ [6,]    5  -43  -42
+ [7,]    5  -42  -41
+ [8,]    5  -42  -41
+ [9,]    5  -42  -41
+[10,]    5  -42  -41
+[11,]    5  -41  -40
 ```
 
 In this matrix you can see the last columns of the persistence diagram of the fourth random walk and the first part of the persistence diagram of the next random walk. 
