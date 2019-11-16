@@ -21,12 +21,13 @@ This program alouds you to create different types of random walks, varying the p
 [f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
 [f3]: http://chart.apis.google.com/chart?cht=tx&chl=Z_n
 [f4]: http://chart.apis.google.com/chart?cht=tx&chl=Z_0=0 
-[f5]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}\\leq{T}}Z_k,\\qquad\{T}\\in\\mathbb{N} 
+[f5]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}\\leq{T}}Z_k,\\quad\{T}\\in\\mathbb{N} 
 
 On the other hand, it is interesting how the random walks approximate to another type of random function, the __Wiener process__. 
 
 2. Hence, the other type of random functions which we are going to be able to generate are __Wiener processes__. In this case let the random variables ![f3] be i.i.d and distributed as normal with mean 0 and variance of 1. Hence, the random step function is going to be given as: 
-$$ S_n(t) = \frac{1}{\sqrt{T}} \sum_{1 \leq k \leq T } Z_k, \quad T \in \mathbb{N} $$
+
+![f5]
 
 A example for both cases would be:
 
