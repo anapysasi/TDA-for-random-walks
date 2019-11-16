@@ -15,12 +15,6 @@ This program alouds you to create different types of random walks, varying the p
 
 1. __Bernoulli random walk with probability p__: Is the serie defined by ![f1] where  ![f2]. Where  ![f3] are the i.i.d random variables which are going to determined as +1 with probability p and -1 with probability (1-p). Also define  ![f4] (we want the paths to start at the origin). 
 
-[f1]: http://chart.apis.google.com/chart?cht=tx&chl=\\{S_{n}\\}
-[f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
-[f3]: http://chart.apis.google.com/chart?cht=tx&chl=Z_n
-[f4]: http://chart.apis.google.com/chart?cht=tx&chl=Z_0=0 
-[f5]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}\\leq{T}}Z_k,\\quad\{T}\\in\\mathbb{N} 
-
 On the other hand, it is interesting how the random walks approximate to another type of random function, the __Wiener process__. 
 
 2. Hence, the other type of random functions which we are going to be able to generate are __Wiener processes__. In this case let the random variables ![f3] be i.i.d and distributed as normal with mean 0 and variance of 1. Hence, the random step function is going to be given as: 
@@ -45,7 +39,7 @@ subplot(p1, p2)
 
 ### Return to zero
 
-In most of the study we are really interested in making sure that the graph which we are computing the peristence starts and ends in zero. For that, the program has an extra function which extract the line that joins the start point $x_0 =(0,0)$ and end point $x_T = (T,S_t)$ [I should add here what Peter said about why making this transformation doesn't really matter for the persistence. Just to make sense of why are we doing this]. 
+In most of the study we are really interested in making sure that the graph which we are computing the peristence starts and ends in zero. For that, the program has an extra function which extract the line that joins the start point ![f6]  and end point ![f7]. 
 
 Let's show an example of a random walk, in which we indicate the line that we are going to substract and after that we'll compute the resulting graph.
 
@@ -83,3 +77,11 @@ Is a function which pretends to collaps all the previous funtions by giving you 
 2. __random_type__: choices between "Bernoulli" andn "Normal_dist" (Notice that they must be in between "")
 3. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
 4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is $p=0.5$
+
+[f1]: http://chart.apis.google.com/chart?cht=tx&chl=\\{S_{n}\\}
+[f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
+[f3]: http://chart.apis.google.com/chart?cht=tx&chl=Z_n
+[f4]: http://chart.apis.google.com/chart?cht=tx&chl=Z_0=0 
+[f5]: http://chart.apis.google.com/chart?cht=tx&chl=S_n(t)=\\frac{1}{\sqrt{T}}\\sum_{1\\leq{k}\\leq{T}}Z_k,\\quad\{T}\\in\\mathbb{N} 
+[f6]: http://chart.apis.google.com/chart?cht=tx&chl=x_0=(0,0)
+[f7]: http://chart.apis.google.com/chart?cht=tx&chl=x_T=(T,S_t) 
