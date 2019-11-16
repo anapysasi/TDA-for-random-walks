@@ -70,7 +70,7 @@ subplot(p1, p2)
 
 ## Configruation.R
 
-Is a function which pretends to collaps all the previous funtions by giving you as an output any of the random walks defiend before. The sintaxis is very simple, you just need to put the following outputs:
+Is a function which pretends to collaps all the previous funtions by giving you as an output any of the random walks defiend before. The sintaxis is very simple, you just need to put the following inputs:
 
 
 1. __T__: number of steps in the random walk
