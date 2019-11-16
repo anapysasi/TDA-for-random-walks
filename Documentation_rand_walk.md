@@ -23,13 +23,13 @@ On the other hand, it is interesting how the random walks approximate to another
 
 A example for both cases would be:
 
-```{r, echo=TRUE}
+```R
 rand_walk <- Bernoulli(T = 100,p = 0.5)
 Wiener <- Normal_dist(T = 100)
 ```
 
 If you want to visualize them, you can plot them by using ```plot_rand_walk()```
-```{r, echo=TRUE}
+```R
 p1 <- plot_rand_walk(rand_walk) 
 p2 <- plot_rand_walk(Wiener)%>%
   layout(showlegend = FALSE)
@@ -43,12 +43,11 @@ In most of the study we are really interested in making sure that the graph whic
 
 Let's show an example of a random walk, in which we indicate the line that we are going to substract and after that we'll compute the resulting graph.
 
-```{r, echo=TRUE}
+```R
 rw <- Bernoulli(T = 100, p = 0.5)
-rw_zero <- return_zero(rw)
-#the function return_zero() gives us the random walk after subtracting the correspondent line
-```
-```{r, echo=FALSE}
+rw_zero <- return_zero(rw) # the function return_zero() gives us the random walk after subtracting the correspondent line
+
+# Lets plot the graph with the line that we will substract
 len <- length(rw$time)
 m <- rw$y[len]/rw$time[len]
 line_y <- c()
@@ -61,6 +60,7 @@ p1 <- plot_ly(line, x = ~ time, y= ~ y2,  type = 'scatter', mode = 'line', name 
   add_trace(line, x = ~ time, y= ~ y1,  type = 'scatter', mode = 'line', name = "line")%>%
   layout(showlegend = FALSE)
 
+# Lets also plot the random walk with the substracted line
 p2 <- plot_rand_walk(rw_zero)%>%
   layout(showlegend = FALSE)%>%
   layout(colorway = c('black', 'black')) 
