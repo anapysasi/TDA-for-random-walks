@@ -31,16 +31,6 @@ On the other hand, it is interesting how the random walks approximate to another
 
 A example for both cases would be:
 
-```{r include=FALSE}
-main_directory <- "C:/Users/Ana Ysasi Cillero/Documents/Erasmus/Florida/Academic_Training/CODE2"
-setwd(main_directory) 
-source("rand_walk.R")
-set.seed(1)
-```
-
-```{r, echo=FALSE}
-set.seed(1)
-```
 ```{r, echo=TRUE}
 rand_walk <- Bernoulli(T = 100,p = 0.5)
 Wiener <- Normal_dist(T = 100)
@@ -61,9 +51,6 @@ In most of the study we are really interested in making sure that the graph whic
 
 Let's show an example of a random walk, in which we indicate the line that we are going to substract and after that we'll compute the resulting graph.
 
-```{r, echo=FALSE}
-set.seed(2)
-```
 ```{r, echo=TRUE}
 rw <- Bernoulli(T = 100, p = 0.5)
 rw_zero <- return_zero(rw)
