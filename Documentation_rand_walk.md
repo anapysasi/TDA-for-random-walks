@@ -78,7 +78,7 @@ Is a function which pretends to collaps all the previous funtions by giving you 
 3. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
 4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
-For example, the previous random walks will be computted as:
+For example, the previous random walks will be computed as:
 ```R
 rand_walk <- configuration(T = 100, random_type = "Bernoulli", return2zero = FALSE, p = 0.5) 
 Wiener <- configuration(T = 100, random_type = "Normal_dist", return2zero = FALSE) 
