@@ -4,8 +4,8 @@
 # return2zero: If you want your random walk to start and finish in zero
 # p: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
-main_directory_1 <- "~/CODE"
-setwd(main_directory_1) 
+main_directory <- "~/CODE"
+setwd(main_directory) 
 source("configuration.R")
 source("union_find_functions.R")
 
