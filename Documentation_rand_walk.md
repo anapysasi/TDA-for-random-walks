@@ -72,11 +72,10 @@ subplot(p1, p2)
 
 Is a function which pretends to collaps all the previous funtions by giving you as an output any of the random walks defiend before. The sintaxis is very simple, you just need to put the following inputs:
 
-
 1. __T__: number of steps in the random walk
-2. __random_type__: choices between "Bernoulli" andn "Normal_dist" (Notice that they must be in between "")
+2. __random_type__: choices between ```"Bernoulli"``` andn ```"Normal_dist"``` (Notice that they must be in between "")
 3. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
-4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
+4. __p__: If ```random_type = "Bernoulli"``` you can add the probability. The default value is ```p=0.5```
 
 For example, the previous random walks will be computed as:
 ```R
