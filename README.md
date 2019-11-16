@@ -124,10 +124,6 @@ pl3 <- per_1[[2]]
 In order to visulaize them you need to use ```PLplot(pl)```. For the previous persistence landscapes you will get:
 ```R
 PLplot(pl1)
-```
-```R
 PLplot(pl2)
-```
-```R
 PLplot(pl3)
 ```
