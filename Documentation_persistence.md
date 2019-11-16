@@ -1,10 +1,7 @@
 # Documentation: persistence
 
-# Topological Data Analysis of Random functions (Random walks)
-### Author: Ana Pilar Ysasi Cillero
-
-# Topological Data Analysis of Random functions (Random walks)
-### Author: Ana Pilar Ysasi Cillero
+## Topological Data Analysis of Random functions (Random walks)
+### Author: Ana Pilar Ysasi Cillero 
 
 
 ## Previous Installations
@@ -40,24 +37,38 @@ The first output of the function ( ```persistence(num_rep, T, random_type ,retur
 
 This is going to consist in a matrix with three columns. The first one is going to be the index of the random walk and the other two colums are going to be the birth and the death of the different intervals.
 
-```{r include=FALSE}
-main_directory <- "C:/Users/Ana Ysasi Cillero/Documents/Erasmus/Florida/Academic_Training/CODE2"
-setwd(main_directory) 
-source("configuration.R")
-source("persistence.R")
-set.seed(1)
-```
-```{r, echo=TRUE}
+```R
 # Lets compute the persistence diagram of a hundred random walks each one with a hundred step, with a Bernouilli distribution (p=0.5)
 pd <- persistence(num_rep = 100, T = 100, random_type = "Bernoulli", return2zero = FALSE)[[1]]
 pd[1:20,]
+      [,1] [,2] [,3]
+ [1,]    1   -6   -4
+ [2,]    1   -4   -3
+ [3,]    1   -4   -3
+ [4,]    1   -4   -3
+ [5,]    1   -3   -2
+ [6,]    1   -3   -2
+ [7,]    1   -3   -2
+ [8,]    1   -3   -2
+ [9,]    1   -3   -2
+[10,]    1   -5   -2
+[11,]    1   -2   -1
+[12,]    1   -2   -1
+[13,]    1   -2   -1
+[14,]    1   -2   -1
+[15,]    1   -1    0
+[16,]    1    0    1
+[17,]    1    0    1
+[18,]    1    0    1
+[19,]    1   -1    1
+[20,]    1    1    2
 ```
 
 
 ### Persistence landscape
 
 The second output of the function ( ```persistence(num_rep, T, random_type ,return2zero, p = 0.5)[[2]]``` ) correspond to the average of all the persistence landscapes (normalize to the number of random walks). 
-```{r, echo=TRUE}
+```R
 # Lets compute the persistence landscape of a thousand random walks each one with a hundred step, with a Bernouilli distribution (p=0.5)
 PLplot(persistence(num_rep = 1000, T = 100, random_type = "Bernoulli", return2zero = FALSE)[[2]]) 
 ```
