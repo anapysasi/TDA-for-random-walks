@@ -1,19 +1,9 @@
 ---
 title: "README"
 author: "Ana Pilar Ysasi Cillero"
-date: "11/2/2019"
-output:
-  html_notebook: default
-  pdf_document: default
 ---
 
-```{r include=FALSE}
-main_directory <- "C:/Users/Ana Ysasi Cillero/Documents/Erasmus/Florida/Academic_Training/CODE2"
-setwd(main_directory) 
-source("configuration.R")
-source("persistence.R")
-set.seed(1)
-```
+
 
 # Topological Data Analysis of Random functions (Random walks)
 ### Author: Ana Pilar Ysasi Cillero
