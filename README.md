@@ -4,8 +4,6 @@
 
 
 # Topological Data Analysis of Random functions (Random walks)
-### Author: Ana Pilar Ysasi Cillero
-
 
 ### Previous Installations
 
