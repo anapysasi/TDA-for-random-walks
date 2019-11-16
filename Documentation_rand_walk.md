@@ -14,7 +14,8 @@ Clone the github repo either using git clone <https://github.com/anapysasi/TDA-f
 
 This program alouds you to create different types of random walks, varying the probability as follows:  
 
-! http://chart.apis.google.com/chart?cht=tx&chl=m=\\frac{m_0}{\\sqrt{1-{\\frac{v^2}{c^2}}}}
+![f1]
+[f1]: http://chart.apis.google.com/chart?cht=tx&chl=m=\\frac{m_0}{\\sqrt{1-{\\frac{v^2}{c^2}}}}
 
 1. __Bernoulli random walk with probability p__: Is the serie defined by $\{ S_{n} \}$ where $S_n = \sum_{i=1}^{n} Z_n$. Where $Z_n$ are the i.i.d random variables which are going to determined as $+1$ with probability $p$ and $-1$ with probability $(1-p)$. Also define $Z_0=0$ (we want the paths to start at the origin). 
 
