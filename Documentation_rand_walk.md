@@ -9,8 +9,6 @@
 
 Clone the github repo either using git clone <https://github.com/anapysasi/TDA-for-random-walks.git> or just download from Github using the green button.
 
-![f5]
-
 ### Random walks calculations
 
 This program alouds you to create different types of random walks, varying the probability as follows:  
