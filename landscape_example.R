@@ -1,7 +1,25 @@
-# Lets compute the persistence landscapes for different random walks.
-# Lets concentrate first only in Bernoulli random walks.
+# Lets compute the persistence landscapes for different random functions
 
+### WIENER PROCESS
+# Normal_dist not rotated
+num_rep <- 1000
+T = 1000
+random_type = "Normal_dist"
+return2zero = FALSE 
 
+pl_Wiener <- persistence(num_rep, T , random_type , return2zero)[[2]]
+PLplot(pl_Wiener)
+
+# Normal_dist rotated BROWNIAN BRIDGE
+num_rep <- 1000
+T = 1000
+random_type = "Normal_dist"
+return2zero = TRUE 
+
+pl_Brow_Bridge <- persistence(num_rep, T , random_type , return2zero)[[2]]
+PLplot(pl_Brow_Bridge)
+
+############################# RANDOM WALKS #############################
 ### BERNOULLI NOT ROTETED
 # Bernoulli p=0.5
 num_rep <- 1000
@@ -104,23 +122,3 @@ p=0.1
 
 pl11 <- persistence(num_rep, T , random_type , return2zero , p )[[2]]
 PLplot(pl11)
-
-##########################################################
-### WIENER PROCESS
-# Normal_dist not rotated
-num_rep <- 1000
-T = 1000
-random_type = "Normal_dist"
-return2zero = FALSE 
-
-pl_Wiener <- persistence(num_rep, T , random_type , return2zero)[[2]]
-PLplot(pl_Wiener)
-
-# Normal_dist rotated BROWNIAN BRIDGE
-num_rep <- 1000
-T = 1000
-random_type = "Normal_dist"
-return2zero = TRUE 
-
-pl_Brow_Bridge <- persistence(num_rep, T , random_type , return2zero)[[2]]
-PLplot(pl_Brow_Bridge)
