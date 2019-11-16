@@ -1,7 +1,7 @@
 # Documentation: random walks and configuration
 
 
-# Topological Data Analysis of Random functions (Random walks)
+## Topological Data Analysis of Random functions (Random walks)
 ### Author: Ana Pilar Ysasi Cillero
 
 
