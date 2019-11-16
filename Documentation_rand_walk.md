@@ -1,5 +1,4 @@
-# Documentation: random walks
-## Author: "Ana Pilar Ysasi Cillero"
+# Documentation: random walks and configuration
 
 
 # Topological Data Analysis of Random functions (Random walks)
