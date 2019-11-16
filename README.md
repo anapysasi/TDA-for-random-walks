@@ -1,7 +1,5 @@
----
-title: "README"
-author: "Ana Pilar Ysasi Cillero"
----
+# TDA-for-random-walks
+## Author: "Ana Pilar Ysasi Cillero"
 
 
 
