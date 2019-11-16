@@ -23,7 +23,7 @@ Clone the github repo either using git clone <https://github.com/anapysasi/TDA-f
 
 ## Persistence diagram and landscape
 
-The function is going to generate $N$ different random walks and then compute the persistence diagram of each one, and finally, compute then the average of all the persistence landscapes.
+The function is going to generate N different random walks and then compute the persistence diagram of each one, and finally, compute then the average of all the persistence landscapes.
 
 ## INPUTS:
 
@@ -31,7 +31,7 @@ The function is going to generate $N$ different random walks and then compute th
 2. __T__: number of steps in the random walk
 3. __random_type__: choices between "Bernoulli" andn "Normal_dist" (Notice that they must be in between "")
 4. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
-5. __p__: If random_type = "Bernoulli" you can add the probability. The default value is $p=0.5$
+5. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
 
 ### Persistence diagram
