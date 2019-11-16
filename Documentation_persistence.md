@@ -26,9 +26,9 @@ The function is going to generate N different random walks and then compute the 
 
 1. __num_rep__: number of random walks in each trial
 2. __T__: number of steps in the random walk
-3. __random_type__: choices between "Bernoulli" andn "Normal_dist" (Notice that they must be in between "")
+3. __random_type__: choices between ```"Bernoulli"``` andn ```"Normal_dist"``` (Notice that they must be in between "")
 4. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
-5. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
+5. __p__: If ```random_type = "Bernoulli"``` you can add the probability. The default value is ```p=0.5```
 
 
 ### Persistence diagram
