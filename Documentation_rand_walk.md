@@ -76,7 +76,7 @@ Is a function which pretends to collaps all the previous funtions by giving you 
 1. __T__: number of steps in the random walk
 2. __random_type__: choices between "Bernoulli" andn "Normal_dist" (Notice that they must be in between "")
 3. __return2zero__: Boolean Argument. If you want your random walk to start and finish in zero, set as TRUE
-4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is $p=0.5$
+4. __p__: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
 [f1]: http://chart.apis.google.com/chart?cht=tx&chl=\\{S_{n}\\}
 [f2]: http://chart.apis.google.com/chart?cht=tx&chl=S_n=\\sum_{i=1}^{n}Z_n
