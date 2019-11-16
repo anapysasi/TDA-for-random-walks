@@ -3,7 +3,7 @@
 # return2zero: If you want your random walk to start and finish in zero
 # p: If random_type = "Bernoulli" you can add the probability. The default value is p=0.5
 
-main_directory <- "C:/Users/Ana Ysasi Cillero/Documents/Erasmus/Florida/Academic_Training/CODE2"
+main_directory <- "~/CODE"
 setwd(main_directory) 
 source("rand_walk.R")
 
