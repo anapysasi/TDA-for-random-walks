@@ -41,7 +41,7 @@ rand_walk_nor <- Normal_dist(T = 1000)
 
 This type of random functions is really interesting since by taking the limit to infinity it is an approximation to a Wiener process, also known as Browian motion, in one dimension.
 
-You may also be interested in studying a random walk which starts and finishes in 0$ (Brownian bridge is an example) and so you can use the following:
+You may also be interested in studying a random walk which starts and finishes in 0 (Brownian bridge is an example) and so you can use the following:
 ```R
 rand_walk_zero <- return_zero(Normal_dist(T = 1000))
 ```
