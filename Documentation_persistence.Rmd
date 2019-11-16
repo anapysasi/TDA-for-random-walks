@@ -22,7 +22,7 @@ After downloading this package you should be ready to use this functuion without
 
 ## Installations
 
-Clone the github repo either using git clone <https://github.com/anaysasi/rand_walk.git> or just download from Github using the green button.
+Clone the github repo either using git clone <https://github.com/anapysasi/TDA-for-random-walks.git> or just download from Github using the green button.
 
 
 ## Persistence diagram and landscape
