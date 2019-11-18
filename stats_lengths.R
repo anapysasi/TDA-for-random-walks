@@ -1,15 +1,12 @@
-# This script is meant to give some statitical information about the persistence diagram.
-
-# It return the average of the sizes of the intervals 
-# Creates a data frame with the size of the intervals and the # repetitions for all the random walks.
-# The last columns of this data frame is the average of the min and max element in the pd for all the computed random walks.
+## This script is meant to give some statitical information about the persistence diagram.
+# It return the maximum, minimum and the average of the sizes of the intervals. Also the average of the maximum and minimum element reached in the persistence diagram
+# Also creates a data frame with the size of the intervals and the # repetitions for all the random walks.
 
 main_directory <- "~/CODE"
 setwd(main_directory) 
 source("persistence.R")
 
 stats_lengths <- function(num_rep, T, random_type ,return2zero, p = 0.5){ 
-  
 # Lets compute the persistence
 pd <- persistence(num_rep, T , random_type , return2zero , p )[[1]]
 pd <- as.data.frame(pd)
