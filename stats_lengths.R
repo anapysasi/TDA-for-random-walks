@@ -1,6 +1,6 @@
 ## This script is meant to give some statitical information about the persistence diagram.
-# It return the maximum, minimum and the average of the sizes of the intervals. Also the average of the maximum and minimum element reached in the persistence diagram
-# Also creates a data frame with the size of the intervals and the # repetitions for all the random walks.
+# It return a data frame with the maximum, minimum and the average of the sizes of the intervals. Also the average of the maximum and minimum element reached in the persistence diagram
+# Also creates a data frame with the size of the intervals, the frequency in which they appear and the probability for all the random walks.
 
 main_directory <- "~/CODE"
 setwd(main_directory) 
@@ -46,19 +46,27 @@ data_len <- matrix(0, ncol = 2, nrow = length(un_len))
       data_len[j,] <- c(i, len)
   }
 pd[5] <- NULL
+
 if (data_len[length(data_len[,1]),2] == 0) {
   data_len <- data_len[-length(data_len[,1]),]
 }
 
+# Let's add the probability of appearing
+summ <- sum(data_len[,2])
+for (i in 1:length(data_len[,2])) { 
+  prob <- data_len[i,2] / summ * 100
+  data_len[i,3] <- prob
+}
+
 # To finish, lets make the matrix a dataframe
 data_len <- as.data.frame(data_len)
-names(data_len) <- c("len_inter", "#rep")
+names(data_len) <- c("len_inter", "freq", "prob")
 
-  if (random_type == "Bernoulli") {
-    print(paste0("Random walk with p= ", p ,". The average of numbers of intervals is ", round(mean_len, digits = 3) , ". There are intervals of sizes from ", round(min_len, digits = 3) ," to ", round(max_len, digits = 3) ,". The mean of the maximum element reached is ", round(mean_max, digits = 3) ," and the average of the minimum value rechead is ", round(mean_min, digits = 3)))
-  }else{
-    print(paste0("Random walk with p= ", p ,". The average of numbers of intervals is ", round(mean_len, digits = 3) , ". There are intervals of sizes from ", round(min_len, digits = 3) ," to ", round(max_len, digits = 3) ,". The mean of the maximum element reached is ", round(mean_max, digits = 3) ," and the average of the minimum value rechead is ", round(mean_min, digits = 3)))
-  }
+other_data <- data.frame(mean_len = mean_len, 
+                         min_len = min_len,
+                         max_len = max_len,
+                         mean_min = mean_min,
+                         mean_max = mean_max)
 
-return(list(mean_len, min_len, max_len, mean_min, mean_max, data_len))
+return(list(other_data, data_len))
 }
